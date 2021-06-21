@@ -11,6 +11,6 @@ public class PersonMapper {
     }
 
     public Person fromRequest(PersonRequest personRequest) {
-        return new Person(personRequest.getPersonId(), personRequest.getFirstName(), personRequest.getLastName());
+        return new Person(personRequest.getPersonId(), personRequest.getFirstName(), personRequest.getLastName(), true);
     }
 }

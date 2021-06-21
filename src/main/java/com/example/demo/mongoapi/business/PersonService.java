@@ -14,7 +14,7 @@ public class PersonService {
     }
 
     public Person findByPersonId(String personId) {
-        return personRepository.findByPersonId(personId);
+        return personRepository.findBy2(personId).get(0);
     }
 
     public Person insert(Person person) {

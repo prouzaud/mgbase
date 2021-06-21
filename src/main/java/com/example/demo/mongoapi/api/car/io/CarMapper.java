@@ -11,6 +11,6 @@ public class CarMapper {
     }
 
     public Car fromRequest(CarRequest carRequest) {
-        return new Car(carRequest.getCarId(), carRequest.getMatriculation(), carRequest.getOwner());
+        return new Car(carRequest.getCarId(), carRequest.getMatriculation(), carRequest.getOwner(), true);
     }
 }
